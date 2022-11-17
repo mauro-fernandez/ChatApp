@@ -32,7 +32,7 @@ function AuthStack() {
 
 function ChatStack() {
   return (
-    <Stack.Navigator defaultScreenOptions={Home}>
+    <Stack.Navigator screenOptions={{headerTitleAlign: "center"}} >
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Chat" component={Chat} />
     </Stack.Navigator>
